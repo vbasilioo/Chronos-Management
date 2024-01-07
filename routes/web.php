@@ -15,4 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [UserController::class, 'index']);
+
 Route::post('/autenticar', [UserController::class, 'authenticateUser'])->name('autenticar');
+
+Route::get('/esqueci-minha-senha', [UserController::class, 'showLinkRequestForm'])->name('esqueci-minha-senha');
+
+Route::post('/recuperar-conta', [UserController::class, 'sendResetPasswordEmail'])->name('recuperar-conta');
+
+Route::get('/dashboard', function() {
+    return view('dashboard.index');
+});
