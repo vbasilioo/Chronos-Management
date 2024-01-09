@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [UserController::class, 'index']);
+Route::get('/', [UserController::class, 'index'])->name('login');
 
 Route::post('/autenticar', [UserController::class, 'authenticateUser'])->name('autenticar');
 
@@ -22,6 +22,6 @@ Route::get('/esqueci-minha-senha', [UserController::class, 'showLinkRequestForm'
 
 Route::post('/recuperar-conta', [UserController::class, 'sendResetPasswordEmail'])->name('recuperar-conta');
 
-Route::get('/dashboard', function() {
-    return view('dashboard.index');
-});
+Route::get('/dashboard', function() { return view('dashboard.index'); });
+
+Route::get('/dashboard/clientes', function() { return view('dashboard.clients'); });
