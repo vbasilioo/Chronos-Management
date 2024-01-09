@@ -1,5 +1,5 @@
 <x-layout title="Esqueci minha senha">
-    <form method="POST" action="{{ route('') }}">
+    <form method="POST">
         @csrf
         <div>
             <label for="email">E-mail:</label>
