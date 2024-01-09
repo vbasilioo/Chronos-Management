@@ -24,4 +24,4 @@ Route::post('/recuperar-conta', [UserController::class, 'sendResetPasswordEmail'
 
 Route::get('/dashboard', function() { return view('dashboard.index'); });
 
-Route::get('/dashboard/clientes', function() { return view('dashboard.clients'); });
+Route::get('/dashboard/clients', function() { return view('dashboard.clients'); })->name('dashboard-clients');

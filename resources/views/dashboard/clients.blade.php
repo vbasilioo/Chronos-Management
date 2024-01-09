@@ -22,7 +22,27 @@
         <!--CONTEÚDO PRINCIPAL DA DASHBOARD-->
         <main class="col-9">
             <div class="d-flex justify-content-center">
-                Main Content
+                <table class="table table-striped mt-5">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Telefone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>João da Silva</td>
+                            <td>joao@example.com</td>
+                            <td>(00) 1234-5678</td>
+                        </tr>
+                        <tr>
+                            <td>Maria Souza</td>
+                            <td>maria@example.com</td>
+                            <td>(00) 9876-5432</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </main>
         <!--FIM DO CONTEÚDO PRINCIPAL DA DASHBOARD-->
